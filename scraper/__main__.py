@@ -38,6 +38,7 @@ def searchMax():
     li = collector.getTweets(geocodes[target], min_ids[target])
 
     # Update the min_id for this geocode
+    min_ids[target] = collector.minId(li)
 
     # And put them in ES
     store.putMany(li, geocodes[target])

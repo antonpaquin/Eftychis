@@ -29,7 +29,8 @@
 				},
 				"content": {
 					"type": "text",
-					"analyzer": "eftychis_analyzer"
+					"analyzer": "eftychis_analyzer",
+					"term_vector": "yes"
 				},
 				"location": {
 					"type": "geo_point"
