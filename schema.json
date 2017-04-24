@@ -1,0 +1,49 @@
+{
+	"settings": {
+		"number_of_replicas": 0,
+		"analysis": {
+			"analyzer": {
+				"eftychis_analyzer": {
+					"type": "custom",
+					"tokenizer": "standard",
+					"filter": ["lowercase", "english_stop", "english_snowball"]
+				}
+			},
+			"filter": {
+				"english_snowball": {
+					"type": "snowball",
+					"language": "English"
+				},
+				"english_stop": {
+					"type": "stop",
+					"stopwords": "_english_"
+				}
+			}
+		}
+	},
+	"mappings": {
+		"tweet": {
+			"properties": {
+				"original": {
+					"type": "text"
+				},
+				"content": {
+					"type": "text",
+					"analyzer": "eftychis_analyzer"
+				},
+				"location": {
+					"type": "geo_point"
+				},
+				"time": {
+					"type": "date"
+				},
+				"id": {
+					"type": "keyword"
+				},
+				"user_id": {
+					"type": "keyword"
+				}
+			}
+		}
+	}
+}
