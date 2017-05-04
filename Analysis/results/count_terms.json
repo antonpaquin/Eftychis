@@ -1,0 +1,30 @@
+{
+  "error" : {
+    "root_cause" : [
+      {
+        "type" : "illegal_argument_exception",
+        "reason" : "Fielddata is disabled on text fields by default. Set fielddata=true on [content] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory."
+      }
+    ],
+    "type" : "search_phase_execution_exception",
+    "reason" : "all shards failed",
+    "phase" : "query",
+    "grouped" : true,
+    "failed_shards" : [
+      {
+        "shard" : 0,
+        "index" : "twdata",
+        "node" : "OeDoC1gRTReXCRL6AlKhKA",
+        "reason" : {
+          "type" : "illegal_argument_exception",
+          "reason" : "Fielddata is disabled on text fields by default. Set fielddata=true on [content] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory."
+        }
+      }
+    ],
+    "caused_by" : {
+      "type" : "illegal_argument_exception",
+      "reason" : "Fielddata is disabled on text fields by default. Set fielddata=true on [content] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory."
+    }
+  },
+  "status" : 400
+}

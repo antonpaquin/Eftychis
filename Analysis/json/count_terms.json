@@ -1,0 +1,10 @@
+{
+	"query": {
+		"match_all" : {}
+	},
+	"aggs" : {
+		"top_count" : {
+			"terms": {"field" : "content"}
+		}
+	}
+}

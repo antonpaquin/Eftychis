@@ -1,0 +1,13 @@
+{
+  "error" : {
+    "root_cause" : [
+      {
+        "type" : "mapper_parsing_exception",
+        "reason" : "No type specified for field [content]"
+      }
+    ],
+    "type" : "mapper_parsing_exception",
+    "reason" : "No type specified for field [content]"
+  },
+  "status" : 400
+}
