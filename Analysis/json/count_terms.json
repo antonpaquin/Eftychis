@@ -4,7 +4,10 @@
 	},
 	"aggs" : {
 		"top_count" : {
-			"terms": {"field" : "content"}
+			"terms": {
+				"field" : "content",
+				"size": 1000
+			}
 		}
 	}
 }

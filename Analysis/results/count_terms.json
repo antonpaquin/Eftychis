@@ -1,30 +1,4163 @@
 {
-  "error" : {
-    "root_cause" : [
+  "took" : 31196,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 23393365,
+    "max_score" : 1.0,
+    "hits" : [
       {
-        "type" : "illegal_argument_exception",
-        "reason" : "Fielddata is disabled on text fields by default. Set fielddata=true on [content] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory."
-      }
-    ],
-    "type" : "search_phase_execution_exception",
-    "reason" : "all shards failed",
-    "phase" : "query",
-    "grouped" : true,
-    "failed_shards" : [
+        "_index" : "twdata",
+        "_type" : "tweet",
+        "_id" : "AVulpfmc9vPT0UQ1APZA",
+        "_score" : 1.0,
+        "_source" : {
+          "original" : "@BAHHA_XOPAHA Ахах, все хорошо\uD83D\uDC99 хоть в курсе какие клипы показывают\uD83C\uDF19",
+          "content" : "@BAHHA_XOPAHA Ахах, все хорошо\uD83D\uDC99 хоть в курсе какие клипы показывают\uD83C\uDF19",
+          "user_id" : 775345470612893697,
+          "location" : "41.27546972,-82.5400896399996",
+          "id" : 856886572104335361,
+          "time" : 1493132653000
+        }
+      },
       {
-        "shard" : 0,
-        "index" : "twdata",
-        "node" : "OeDoC1gRTReXCRL6AlKhKA",
-        "reason" : {
-          "type" : "illegal_argument_exception",
-          "reason" : "Fielddata is disabled on text fields by default. Set fielddata=true on [content] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory."
+        "_index" : "twdata",
+        "_type" : "tweet",
+        "_id" : "AVulpfm39vPT0UQ1APZG",
+        "_score" : 1.0,
+        "_source" : {
+          "original" : ".@ShinsukeN cant wait to see u tonight on wwe smackdown live",
+          "content" : ".@ShinsukeN cant wait to see u tonight on wwe smackdown live",
+          "user_id" : 1472531708,
+          "location" : "41.27546972,-82.5400896399996",
+          "id" : 856886489023696896,
+          "time" : 1493132633000
+        }
+      },
+      {
+        "_index" : "twdata",
+        "_type" : "tweet",
+        "_id" : "AVulpfm79vPT0UQ1APZH",
+        "_score" : 1.0,
+        "_source" : {
+          "original" : "RT @Sparrott_12: 75 retweets and Lucas wears a bra to school Friday! https://t.co/bwkhY9bmPx",
+          "content" : "RT @Sparrott_12: 75 retweets and Lucas wears a bra to school Friday! https://t.co/bwkhY9bmPx",
+          "user_id" : 341053154,
+          "location" : "41.27546972,-82.5400896399996",
+          "id" : 856886486863683584,
+          "time" : 1493132633000
+        }
+      },
+      {
+        "_index" : "twdata",
+        "_type" : "tweet",
+        "_id" : "AVulpfnO9vPT0UQ1APZL",
+        "_score" : 1.0,
+        "_source" : {
+          "original" : "RT @makeupbyshaniah: So whats the tea on jessie williams? He rly cheated on his wife? https://t.co/V9L7K5r1MB",
+          "content" : "RT @makeupbyshaniah: So whats the tea on jessie williams? He rly cheated on his wife? https://t.co/V9L7K5r1MB",
+          "user_id" : 2335934905,
+          "location" : "41.27546972,-82.5400896399996",
+          "id" : 856886452772159489,
+          "time" : 1493132625000
+        }
+      },
+      {
+        "_index" : "twdata",
+        "_type" : "tweet",
+        "_id" : "AVulpfns9vPT0UQ1APZQ",
+        "_score" : 1.0,
+        "_source" : {
+          "original" : "RT @shotime41: @MIKEWISE0 Thanks wise got to lead the way \uD83D\uDCAF @MIKEWISE0",
+          "content" : "RT @shotime41: @MIKEWISE0 Thanks wise got to lead the way \uD83D\uDCAF @MIKEWISE0",
+          "user_id" : 3099218854,
+          "location" : "41.27546972,-82.5400896399996",
+          "id" : 856886403090837504,
+          "time" : 1493132613000
+        }
+      },
+      {
+        "_index" : "twdata",
+        "_type" : "tweet",
+        "_id" : "AVulpfoF9vPT0UQ1APZX",
+        "_score" : 1.0,
+        "_source" : {
+          "original" : "Yea you did... we ain't takin no for an answer https://t.co/CL04RhPju2",
+          "content" : "Yea you did... we ain't takin no for an answer https://t.co/CL04RhPju2",
+          "user_id" : 1522758552,
+          "location" : "41.27546972,-82.5400896399996",
+          "id" : 856886361575616513,
+          "time" : 1493132603000
+        }
+      },
+      {
+        "_index" : "twdata",
+        "_type" : "tweet",
+        "_id" : "AVulpfob9vPT0UQ1APZd",
+        "_score" : 1.0,
+        "_source" : {
+          "original" : "RT @clairelimkh: now that the ship of njh and lsk has sailed im looking forward if theres anything for phs and pby \uD83D\uDE02",
+          "content" : "RT @clairelimkh: now that the ship of njh and lsk has sailed im looking forward if theres anything for phs and pby \uD83D\uDE02",
+          "user_id" : 3012501637,
+          "location" : "41.27546972,-82.5400896399996",
+          "id" : 856886298799296512,
+          "time" : 1493132588000
+        }
+      },
+      {
+        "_index" : "twdata",
+        "_type" : "tweet",
+        "_id" : "AVulpfox9vPT0UQ1APZj",
+        "_score" : 1.0,
+        "_source" : {
+          "original" : "Check out Sapori Italian Grille on the  2017 Cleveland Hot List https://t.co/ai5lsnVjaa via @CleHotList",
+          "content" : "Check out Sapori Italian Grille on the  2017 Cleveland Hot List https://t.co/ai5lsnVjaa via @CleHotList",
+          "user_id" : 707274756215676928,
+          "location" : "41.27546972,-82.5400896399996",
+          "id" : 856886267648372736,
+          "time" : 1493132581000
+        }
+      },
+      {
+        "_index" : "twdata",
+        "_type" : "tweet",
+        "_id" : "AVulpfvy9vPT0UQ1APZk",
+        "_score" : 1.0,
+        "_source" : {
+          "original" : "RT @mattPFV: I FINALLY FOUND OUT WHATS WRONG WITH ME AND I'LL BE 100% BACK TO NORMAL BY NEXT WEEK. FUCKING HYPE.",
+          "content" : "RT @mattPFV: I FINALLY FOUND OUT WHATS WRONG WITH ME AND I'LL BE 100% BACK TO NORMAL BY NEXT WEEK. FUCKING HYPE.",
+          "user_id" : 2605665458,
+          "location" : "41.27546972,-81.6417739799996",
+          "id" : 856886996840497153,
+          "time" : 1493132754000
+        }
+      },
+      {
+        "_index" : "twdata",
+        "_type" : "tweet",
+        "_id" : "AVulpfv39vPT0UQ1APZl",
+        "_score" : 1.0,
+        "_source" : {
+          "original" : "RT @wethsilkosz: this kid just told me i didn't know what real music was https://t.co/jtX2heBCDD",
+          "content" : "RT @wethsilkosz: this kid just told me i didn't know what real music was https://t.co/jtX2heBCDD",
+          "user_id" : 818371724492292096,
+          "location" : "41.27546972,-81.6417739799996",
+          "id" : 856886996584677377,
+          "time" : 1493132754000
         }
       }
-    ],
-    "caused_by" : {
-      "type" : "illegal_argument_exception",
-      "reason" : "Fielddata is disabled on text fields by default. Set fielddata=true on [content] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory."
-    }
+    ]
   },
-  "status" : 400
+  "aggregations" : {
+    "top_count" : {
+      "doc_count_error_upper_bound" : 17651,
+      "sum_other_doc_count" : 108904912,
+      "buckets" : [
+        {
+          "key" : "https",
+          "doc_count" : 11315363
+        },
+        {
+          "key" : "t.co",
+          "doc_count" : 11080257
+        },
+        {
+          "key" : "rt",
+          "doc_count" : 6975240
+        },
+        {
+          "key" : "i",
+          "doc_count" : 3296628
+        },
+        {
+          "key" : "you",
+          "doc_count" : 2496798
+        },
+        {
+          "key" : "my",
+          "doc_count" : 1557554
+        },
+        {
+          "key" : "me",
+          "doc_count" : 1394295
+        },
+        {
+          "key" : "your",
+          "doc_count" : 972591
+        },
+        {
+          "key" : "so",
+          "doc_count" : 911633
+        },
+        {
+          "key" : "just",
+          "doc_count" : 895377
+        },
+        {
+          "key" : "have",
+          "doc_count" : 893562
+        },
+        {
+          "key" : "like",
+          "doc_count" : 831518
+        },
+        {
+          "key" : "get",
+          "doc_count" : 797852
+        },
+        {
+          "key" : "i'm",
+          "doc_count" : 791475
+        },
+        {
+          "key" : "all",
+          "doc_count" : 697677
+        },
+        {
+          "key" : "out",
+          "doc_count" : 675568
+        },
+        {
+          "key" : "what",
+          "doc_count" : 674869
+        },
+        {
+          "key" : "do",
+          "doc_count" : 668824
+        },
+        {
+          "key" : "it",
+          "doc_count" : 657427
+        },
+        {
+          "key" : "up",
+          "doc_count" : 646509
+        },
+        {
+          "key" : "we",
+          "doc_count" : 645694
+        },
+        {
+          "key" : "amp",
+          "doc_count" : 642956
+        },
+        {
+          "key" : "love",
+          "doc_count" : 605927
+        },
+        {
+          "key" : "one",
+          "doc_count" : 589738
+        },
+        {
+          "key" : "go",
+          "doc_count" : 589456
+        },
+        {
+          "key" : "from",
+          "doc_count" : 572263
+        },
+        {
+          "key" : "day",
+          "doc_count" : 566492
+        },
+        {
+          "key" : "when",
+          "doc_count" : 562107
+        },
+        {
+          "key" : "don't",
+          "doc_count" : 560223
+        },
+        {
+          "key" : "can",
+          "doc_count" : 544366
+        },
+        {
+          "key" : "about",
+          "doc_count" : 522288
+        },
+        {
+          "key" : "more",
+          "doc_count" : 513861
+        },
+        {
+          "key" : "how",
+          "doc_count" : 497404
+        },
+        {
+          "key" : "he",
+          "doc_count" : 492542
+        },
+        {
+          "key" : "time",
+          "doc_count" : 484145
+        },
+        {
+          "key" : "de",
+          "doc_count" : 475317
+        },
+        {
+          "key" : "peopl",
+          "doc_count" : 469214
+        },
+        {
+          "key" : "now",
+          "doc_count" : 447814
+        },
+        {
+          "key" : "today",
+          "doc_count" : 440819
+        },
+        {
+          "key" : "want",
+          "doc_count" : 437528
+        },
+        {
+          "key" : "good",
+          "doc_count" : 431476
+        },
+        {
+          "key" : "know",
+          "doc_count" : 428201
+        },
+        {
+          "key" : "our",
+          "doc_count" : 423923
+        },
+        {
+          "key" : "make",
+          "doc_count" : 423368
+        },
+        {
+          "key" : "who",
+          "doc_count" : 404668
+        },
+        {
+          "key" : "new",
+          "doc_count" : 394385
+        },
+        {
+          "key" : "thank",
+          "doc_count" : 393571
+        },
+        {
+          "key" : "need",
+          "doc_count" : 393108
+        },
+        {
+          "key" : "see",
+          "doc_count" : 383542
+        },
+        {
+          "key" : "2",
+          "doc_count" : 381745
+        },
+        {
+          "key" : "look",
+          "doc_count" : 372243
+        },
+        {
+          "key" : "here",
+          "doc_count" : 347221
+        },
+        {
+          "key" : "que",
+          "doc_count" : 328729
+        },
+        {
+          "key" : "has",
+          "doc_count" : 326806
+        },
+        {
+          "key" : "work",
+          "doc_count" : 322507
+        },
+        {
+          "key" : "via",
+          "doc_count" : 318556
+        },
+        {
+          "key" : "come",
+          "doc_count" : 308035
+        },
+        {
+          "key" : "his",
+          "doc_count" : 307667
+        },
+        {
+          "key" : "think",
+          "doc_count" : 306032
+        },
+        {
+          "key" : "whi",
+          "doc_count" : 305198
+        },
+        {
+          "key" : "check",
+          "doc_count" : 301564
+        },
+        {
+          "key" : "い",
+          "doc_count" : 298644
+        },
+        {
+          "key" : "take",
+          "doc_count" : 298542
+        },
+        {
+          "key" : "1",
+          "doc_count" : 297847
+        },
+        {
+          "key" : "say",
+          "doc_count" : 297262
+        },
+        {
+          "key" : "life",
+          "doc_count" : 296899
+        },
+        {
+          "key" : "year",
+          "doc_count" : 295670
+        },
+        {
+          "key" : "some",
+          "doc_count" : 292692
+        },
+        {
+          "key" : "got",
+          "doc_count" : 285696
+        },
+        {
+          "key" : "great",
+          "doc_count" : 285477
+        },
+        {
+          "key" : "3",
+          "doc_count" : 280668
+        },
+        {
+          "key" : "fuck",
+          "doc_count" : 277155
+        },
+        {
+          "key" : "can't",
+          "doc_count" : 276840
+        },
+        {
+          "key" : "follow",
+          "doc_count" : 275300
+        },
+        {
+          "key" : "la",
+          "doc_count" : 274462
+        },
+        {
+          "key" : "happi",
+          "doc_count" : 268217
+        },
+        {
+          "key" : "back",
+          "doc_count" : 264689
+        },
+        {
+          "key" : "thing",
+          "doc_count" : 258883
+        },
+        {
+          "key" : "been",
+          "doc_count" : 258693
+        },
+        {
+          "key" : "us",
+          "doc_count" : 258160
+        },
+        {
+          "key" : "am",
+          "doc_count" : 254150
+        },
+        {
+          "key" : "video",
+          "doc_count" : 252159
+        },
+        {
+          "key" : "you'r",
+          "doc_count" : 251823
+        },
+        {
+          "key" : "4",
+          "doc_count" : 251528
+        },
+        {
+          "key" : "she",
+          "doc_count" : 250530
+        },
+        {
+          "key" : "too",
+          "doc_count" : 250039
+        },
+        {
+          "key" : "right",
+          "doc_count" : 246648
+        },
+        {
+          "key" : "feel",
+          "doc_count" : 246443
+        },
+        {
+          "key" : "them",
+          "doc_count" : 245549
+        },
+        {
+          "key" : "never",
+          "doc_count" : 242890
+        },
+        {
+          "key" : "may",
+          "doc_count" : 242567
+        },
+        {
+          "key" : "onli",
+          "doc_count" : 242222
+        },
+        {
+          "key" : "much",
+          "doc_count" : 242053
+        },
+        {
+          "key" : "job",
+          "doc_count" : 241351
+        },
+        {
+          "key" : "would",
+          "doc_count" : 240601
+        },
+        {
+          "key" : "た",
+          "doc_count" : 240569
+        },
+        {
+          "key" : "man",
+          "doc_count" : 239857
+        },
+        {
+          "key" : "best",
+          "doc_count" : 238437
+        },
+        {
+          "key" : "her",
+          "doc_count" : 237871
+        },
+        {
+          "key" : "5",
+          "doc_count" : 236569
+        },
+        {
+          "key" : "let",
+          "doc_count" : 236232
+        },
+        {
+          "key" : "realli",
+          "doc_count" : 233020
+        },
+        {
+          "key" : "の",
+          "doc_count" : 232788
+        },
+        {
+          "key" : "still",
+          "doc_count" : 232692
+        },
+        {
+          "key" : "win",
+          "doc_count" : 230662
+        },
+        {
+          "key" : "lol",
+          "doc_count" : 230009
+        },
+        {
+          "key" : "play",
+          "doc_count" : 227104
+        },
+        {
+          "key" : "な",
+          "doc_count" : 226575
+        },
+        {
+          "key" : "て",
+          "doc_count" : 225118
+        },
+        {
+          "key" : "u",
+          "doc_count" : 222650
+        },
+        {
+          "key" : "し",
+          "doc_count" : 219945
+        },
+        {
+          "key" : "over",
+          "doc_count" : 218225
+        },
+        {
+          "key" : "girl",
+          "doc_count" : 217863
+        },
+        {
+          "key" : "youtub",
+          "doc_count" : 216604
+        },
+        {
+          "key" : "way",
+          "doc_count" : 216205
+        },
+        {
+          "key" : "even",
+          "doc_count" : 216141
+        },
+        {
+          "key" : "っ",
+          "doc_count" : 215855
+        },
+        {
+          "key" : "that",
+          "doc_count" : 211963
+        },
+        {
+          "key" : "trump",
+          "doc_count" : 209854
+        },
+        {
+          "key" : "off",
+          "doc_count" : 209834
+        },
+        {
+          "key" : "live",
+          "doc_count" : 208433
+        },
+        {
+          "key" : "had",
+          "doc_count" : 206552
+        },
+        {
+          "key" : "か",
+          "doc_count" : 205122
+        },
+        {
+          "key" : "shit",
+          "doc_count" : 204764
+        },
+        {
+          "key" : "friend",
+          "doc_count" : 203519
+        },
+        {
+          "key" : "than",
+          "doc_count" : 203488
+        },
+        {
+          "key" : "first",
+          "doc_count" : 201799
+        },
+        {
+          "key" : "watch",
+          "doc_count" : 201618
+        },
+        {
+          "key" : "y",
+          "doc_count" : 201507
+        },
+        {
+          "key" : "tri",
+          "doc_count" : 199021
+        },
+        {
+          "key" : "で",
+          "doc_count" : 197483
+        },
+        {
+          "key" : "en",
+          "doc_count" : 196891
+        },
+        {
+          "key" : "week",
+          "doc_count" : 196758
+        },
+        {
+          "key" : "last",
+          "doc_count" : 195288
+        },
+        {
+          "key" : "call",
+          "doc_count" : 194604
+        },
+        {
+          "key" : "game",
+          "doc_count" : 194411
+        },
+        {
+          "key" : "start",
+          "doc_count" : 194342
+        },
+        {
+          "key" : "be",
+          "doc_count" : 190473
+        },
+        {
+          "key" : "person",
+          "doc_count" : 190132
+        },
+        {
+          "key" : "2017",
+          "doc_count" : 188853
+        },
+        {
+          "key" : "help",
+          "doc_count" : 187445
+        },
+        {
+          "key" : "ん",
+          "doc_count" : 186204
+        },
+        {
+          "key" : "him",
+          "doc_count" : 185917
+        },
+        {
+          "key" : "did",
+          "doc_count" : 182211
+        },
+        {
+          "key" : "someon",
+          "doc_count" : 180165
+        },
+        {
+          "key" : "alway",
+          "doc_count" : 179856
+        },
+        {
+          "key" : "と",
+          "doc_count" : 179044
+        },
+        {
+          "key" : "night",
+          "doc_count" : 178217
+        },
+        {
+          "key" : "w",
+          "doc_count" : 177564
+        },
+        {
+          "key" : "ever",
+          "doc_count" : 177518
+        },
+        {
+          "key" : "give",
+          "doc_count" : 176316
+        },
+        {
+          "key" : "guy",
+          "doc_count" : 175276
+        },
+        {
+          "key" : "becaus",
+          "doc_count" : 175161
+        },
+        {
+          "key" : "show",
+          "doc_count" : 175021
+        },
+        {
+          "key" : "after",
+          "doc_count" : 173196
+        },
+        {
+          "key" : "gt",
+          "doc_count" : 172950
+        },
+        {
+          "key" : "t",
+          "doc_count" : 172923
+        },
+        {
+          "key" : "could",
+          "doc_count" : 172295
+        },
+        {
+          "key" : "should",
+          "doc_count" : 170424
+        },
+        {
+          "key" : "に",
+          "doc_count" : 170256
+        },
+        {
+          "key" : "use",
+          "doc_count" : 169235
+        },
+        {
+          "key" : "pleas",
+          "doc_count" : 169045
+        },
+        {
+          "key" : "vote",
+          "doc_count" : 168053
+        },
+        {
+          "key" : "miss",
+          "doc_count" : 165958
+        },
+        {
+          "key" : "る",
+          "doc_count" : 165858
+        },
+        {
+          "key" : "10",
+          "doc_count" : 165530
+        },
+        {
+          "key" : "school",
+          "doc_count" : 165369
+        },
+        {
+          "key" : "el",
+          "doc_count" : 163921
+        },
+        {
+          "key" : "down",
+          "doc_count" : 163467
+        },
+        {
+          "key" : "top",
+          "doc_count" : 162375
+        },
+        {
+          "key" : "better",
+          "doc_count" : 161629
+        },
+        {
+          "key" : "talk",
+          "doc_count" : 159173
+        },
+        {
+          "key" : "す",
+          "doc_count" : 158611
+        },
+        {
+          "key" : "well",
+          "doc_count" : 158453
+        },
+        {
+          "key" : "う",
+          "doc_count" : 157169
+        },
+        {
+          "key" : "stop",
+          "doc_count" : 155231
+        },
+        {
+          "key" : "hope",
+          "doc_count" : 154410
+        },
+        {
+          "key" : "god",
+          "doc_count" : 153700
+        },
+        {
+          "key" : "keep",
+          "doc_count" : 152649
+        },
+        {
+          "key" : "が",
+          "doc_count" : 151340
+        },
+        {
+          "key" : "free",
+          "doc_count" : 150945
+        },
+        {
+          "key" : "wait",
+          "doc_count" : 150912
+        },
+        {
+          "key" : "tonight",
+          "doc_count" : 150322
+        },
+        {
+          "key" : "everi",
+          "doc_count" : 148756
+        },
+        {
+          "key" : "tell",
+          "doc_count" : 148529
+        },
+        {
+          "key" : "o",
+          "doc_count" : 148151
+        },
+        {
+          "key" : "other",
+          "doc_count" : 148084
+        },
+        {
+          "key" : "home",
+          "doc_count" : 147610
+        },
+        {
+          "key" : "ら",
+          "doc_count" : 146490
+        },
+        {
+          "key" : "next",
+          "doc_count" : 146324
+        },
+        {
+          "key" : "where",
+          "doc_count" : 143967
+        },
+        {
+          "key" : "ま",
+          "doc_count" : 143273
+        },
+        {
+          "key" : "i'v",
+          "doc_count" : 142195
+        },
+        {
+          "key" : "most",
+          "doc_count" : 141732
+        },
+        {
+          "key" : "final",
+          "doc_count" : 138984
+        },
+        {
+          "key" : "open",
+          "doc_count" : 138100
+        },
+        {
+          "key" : "un",
+          "doc_count" : 136507
+        },
+        {
+          "key" : "real",
+          "doc_count" : 136307
+        },
+        {
+          "key" : "は",
+          "doc_count" : 135511
+        },
+        {
+          "key" : "find",
+          "doc_count" : 135351
+        },
+        {
+          "key" : "hire",
+          "doc_count" : 134241
+        },
+        {
+          "key" : "everyon",
+          "doc_count" : 131680
+        },
+        {
+          "key" : "6",
+          "doc_count" : 131281
+        },
+        {
+          "key" : "post",
+          "doc_count" : 129658
+        },
+        {
+          "key" : "team",
+          "doc_count" : 129118
+        },
+        {
+          "key" : "again",
+          "doc_count" : 129052
+        },
+        {
+          "key" : "ya",
+          "doc_count" : 129030
+        },
+        {
+          "key" : "gonna",
+          "doc_count" : 129015
+        },
+        {
+          "key" : "hate",
+          "doc_count" : 128798
+        },
+        {
+          "key" : "same",
+          "doc_count" : 128633
+        },
+        {
+          "key" : "se",
+          "doc_count" : 128288
+        },
+        {
+          "key" : "7",
+          "doc_count" : 127746
+        },
+        {
+          "key" : "world",
+          "doc_count" : 127595
+        },
+        {
+          "key" : "e",
+          "doc_count" : 127412
+        },
+        {
+          "key" : "i'll",
+          "doc_count" : 126653
+        },
+        {
+          "key" : "oh",
+          "doc_count" : 126494
+        },
+        {
+          "key" : "high",
+          "doc_count" : 126347
+        },
+        {
+          "key" : "big",
+          "doc_count" : 126252
+        },
+        {
+          "key" : "だ",
+          "doc_count" : 124791
+        },
+        {
+          "key" : "im",
+          "doc_count" : 124108
+        },
+        {
+          "key" : "read",
+          "doc_count" : 123921
+        },
+        {
+          "key" : "someth",
+          "doc_count" : 123524
+        },
+        {
+          "key" : "made",
+          "doc_count" : 123380
+        },
+        {
+          "key" : "befor",
+          "doc_count" : 123365
+        },
+        {
+          "key" : "birthday",
+          "doc_count" : 123182
+        },
+        {
+          "key" : "littl",
+          "doc_count" : 123108
+        },
+        {
+          "key" : "were",
+          "doc_count" : 123006
+        },
+        {
+          "key" : "morn",
+          "doc_count" : 121003
+        },
+        {
+          "key" : "ani",
+          "doc_count" : 120936
+        },
+        {
+          "key" : "bad",
+          "doc_count" : 120843
+        },
+        {
+          "key" : "we'r",
+          "doc_count" : 120236
+        },
+        {
+          "key" : "put",
+          "doc_count" : 119449
+        },
+        {
+          "key" : "care",
+          "doc_count" : 119385
+        },
+        {
+          "key" : "く",
+          "doc_count" : 119079
+        },
+        {
+          "key" : "two",
+          "doc_count" : 118832
+        },
+        {
+          "key" : "beauti",
+          "doc_count" : 117739
+        },
+        {
+          "key" : "も",
+          "doc_count" : 117238
+        },
+        {
+          "key" : "end",
+          "doc_count" : 117224
+        },
+        {
+          "key" : "run",
+          "doc_count" : 116896
+        },
+        {
+          "key" : "yes",
+          "doc_count" : 116510
+        },
+        {
+          "key" : "れ",
+          "doc_count" : 113825
+        },
+        {
+          "key" : "anyon",
+          "doc_count" : 113591
+        },
+        {
+          "key" : "tweet",
+          "doc_count" : 113032
+        },
+        {
+          "key" : "wanna",
+          "doc_count" : 112796
+        },
+        {
+          "key" : "chang",
+          "doc_count" : 112188
+        },
+        {
+          "key" : "happen",
+          "doc_count" : 112054
+        },
+        {
+          "key" : "boy",
+          "doc_count" : 111338
+        },
+        {
+          "key" : "り",
+          "doc_count" : 110937
+        },
+        {
+          "key" : "listen",
+          "doc_count" : 110378
+        },
+        {
+          "key" : "realdonaldtrump",
+          "doc_count" : 110274
+        },
+        {
+          "key" : "s",
+          "doc_count" : 110026
+        },
+        {
+          "key" : "mean",
+          "doc_count" : 109672
+        },
+        {
+          "key" : "said",
+          "doc_count" : 109575
+        },
+        {
+          "key" : "doe",
+          "doc_count" : 109209
+        },
+        {
+          "key" : "ask",
+          "doc_count" : 108826
+        },
+        {
+          "key" : "ass",
+          "doc_count" : 108530
+        },
+        {
+          "key" : "tomorrow",
+          "doc_count" : 108415
+        },
+        {
+          "key" : "na",
+          "doc_count" : 108100
+        },
+        {
+          "key" : "old",
+          "doc_count" : 107500
+        },
+        {
+          "key" : "kid",
+          "doc_count" : 107465
+        },
+        {
+          "key" : "hard",
+          "doc_count" : 107320
+        },
+        {
+          "key" : "sure",
+          "doc_count" : 106209
+        },
+        {
+          "key" : "anoth",
+          "doc_count" : 106183
+        },
+        {
+          "key" : "social",
+          "doc_count" : 105992
+        },
+        {
+          "key" : "state",
+          "doc_count" : 105981
+        },
+        {
+          "key" : "everyth",
+          "doc_count" : 105867
+        },
+        {
+          "key" : "mani",
+          "doc_count" : 105597
+        },
+        {
+          "key" : "didn't",
+          "doc_count" : 105121
+        },
+        {
+          "key" : "chanc",
+          "doc_count" : 104957
+        },
+        {
+          "key" : "babi",
+          "doc_count" : 104554
+        },
+        {
+          "key" : "done",
+          "doc_count" : 103951
+        },
+        {
+          "key" : "veri",
+          "doc_count" : 103936
+        },
+        {
+          "key" : "thought",
+          "doc_count" : 103162
+        },
+        {
+          "key" : "music",
+          "doc_count" : 103055
+        },
+        {
+          "key" : "8",
+          "doc_count" : 102297
+        },
+        {
+          "key" : "le",
+          "doc_count" : 102086
+        },
+        {
+          "key" : "automat",
+          "doc_count" : 101581
+        },
+        {
+          "key" : "hous",
+          "doc_count" : 101498
+        },
+        {
+          "key" : "latest",
+          "doc_count" : 101398
+        },
+        {
+          "key" : "support",
+          "doc_count" : 100972
+        },
+        {
+          "key" : "long",
+          "doc_count" : 100860
+        },
+        {
+          "key" : "あ",
+          "doc_count" : 99528
+        },
+        {
+          "key" : "こ",
+          "doc_count" : 99263
+        },
+        {
+          "key" : "y'all",
+          "doc_count" : 99106
+        },
+        {
+          "key" : "also",
+          "doc_count" : 98533
+        },
+        {
+          "key" : "learn",
+          "doc_count" : 98123
+        },
+        {
+          "key" : "twitter",
+          "doc_count" : 98022
+        },
+        {
+          "key" : "sleep",
+          "doc_count" : 97998
+        },
+        {
+          "key" : "head",
+          "doc_count" : 97817
+        },
+        {
+          "key" : "lot",
+          "doc_count" : 97605
+        },
+        {
+          "key" : "those",
+          "doc_count" : 97059
+        },
+        {
+          "key" : "actual",
+          "doc_count" : 96982
+        },
+        {
+          "key" : "wish",
+          "doc_count" : 96764
+        },
+        {
+          "key" : "よ",
+          "doc_count" : 96244
+        },
+        {
+          "key" : "kill",
+          "doc_count" : 95822
+        },
+        {
+          "key" : "until",
+          "doc_count" : 95713
+        },
+        {
+          "key" : "stay",
+          "doc_count" : 95389
+        },
+        {
+          "key" : "es",
+          "doc_count" : 94946
+        },
+        {
+          "key" : "photo",
+          "doc_count" : 94876
+        },
+        {
+          "key" : "さ",
+          "doc_count" : 94410
+        },
+        {
+          "key" : "through",
+          "doc_count" : 94275
+        },
+        {
+          "key" : "bitch",
+          "doc_count" : 94186
+        },
+        {
+          "key" : "news",
+          "doc_count" : 93910
+        },
+        {
+          "key" : "famili",
+          "doc_count" : 93886
+        },
+        {
+          "key" : "noth",
+          "doc_count" : 93631
+        },
+        {
+          "key" : "name",
+          "doc_count" : 92524
+        },
+        {
+          "key" : "part",
+          "doc_count" : 92429
+        },
+        {
+          "key" : "white",
+          "doc_count" : 92016
+        },
+        {
+          "key" : "け",
+          "doc_count" : 91837
+        },
+        {
+          "key" : "believ",
+          "doc_count" : 91602
+        },
+        {
+          "key" : "around",
+          "doc_count" : 91570
+        },
+        {
+          "key" : "doesn't",
+          "doc_count" : 91399
+        },
+        {
+          "key" : "readi",
+          "doc_count" : 91012
+        },
+        {
+          "key" : "book",
+          "doc_count" : 90822
+        },
+        {
+          "key" : "por",
+          "doc_count" : 90512
+        },
+        {
+          "key" : "heart",
+          "doc_count" : 90453
+        },
+        {
+          "key" : "を",
+          "doc_count" : 90217
+        },
+        {
+          "key" : "30",
+          "doc_count" : 90156
+        },
+        {
+          "key" : "join",
+          "doc_count" : 89930
+        },
+        {
+          "key" : "fun",
+          "doc_count" : 89684
+        },
+        {
+          "key" : "stori",
+          "doc_count" : 89614
+        },
+        {
+          "key" : "away",
+          "doc_count" : 89532
+        },
+        {
+          "key" : "pick",
+          "doc_count" : 88796
+        },
+        {
+          "key" : "own",
+          "doc_count" : 88714
+        },
+        {
+          "key" : "amaz",
+          "doc_count" : 88622
+        },
+        {
+          "key" : "lo",
+          "doc_count" : 88598
+        },
+        {
+          "key" : "money",
+          "doc_count" : 88549
+        },
+        {
+          "key" : "artist",
+          "doc_count" : 88533
+        },
+        {
+          "key" : "hour",
+          "doc_count" : 88299
+        },
+        {
+          "key" : "move",
+          "doc_count" : 88295
+        },
+        {
+          "key" : "yo",
+          "doc_count" : 87985
+        },
+        {
+          "key" : "き",
+          "doc_count" : 87947
+        },
+        {
+          "key" : "te",
+          "doc_count" : 87689
+        },
+        {
+          "key" : "wow",
+          "doc_count" : 87164
+        },
+        {
+          "key" : "hey",
+          "doc_count" : 86761
+        },
+        {
+          "key" : "con",
+          "doc_count" : 86554
+        },
+        {
+          "key" : "song",
+          "doc_count" : 86445
+        },
+        {
+          "key" : "si",
+          "doc_count" : 86201
+        },
+        {
+          "key" : "die",
+          "doc_count" : 85790
+        },
+        {
+          "key" : "n",
+          "doc_count" : 85486
+        },
+        {
+          "key" : "month",
+          "doc_count" : 85468
+        },
+        {
+          "key" : "place",
+          "doc_count" : 85335
+        },
+        {
+          "key" : "damn",
+          "doc_count" : 84701
+        },
+        {
+          "key" : "sign",
+          "doc_count" : 84625
+        },
+        {
+          "key" : "nice",
+          "doc_count" : 83680
+        },
+        {
+          "key" : "rememb",
+          "doc_count" : 83439
+        },
+        {
+          "key" : "alreadi",
+          "doc_count" : 83352
+        },
+        {
+          "key" : "unfollow",
+          "doc_count" : 83180
+        },
+        {
+          "key" : "weekend",
+          "doc_count" : 82970
+        },
+        {
+          "key" : "season",
+          "doc_count" : 82739
+        },
+        {
+          "key" : "nowplay",
+          "doc_count" : 82715
+        },
+        {
+          "key" : "hit",
+          "doc_count" : 82684
+        },
+        {
+          "key" : "お",
+          "doc_count" : 82657
+        },
+        {
+          "key" : "pretti",
+          "doc_count" : 82632
+        },
+        {
+          "key" : "や",
+          "doc_count" : 82603
+        },
+        {
+          "key" : "los",
+          "doc_count" : 82316
+        },
+        {
+          "key" : "class",
+          "doc_count" : 81971
+        },
+        {
+          "key" : "while",
+          "doc_count" : 81931
+        },
+        {
+          "key" : "report",
+          "doc_count" : 81920
+        },
+        {
+          "key" : "black",
+          "doc_count" : 80904
+        },
+        {
+          "key" : "meet",
+          "doc_count" : 80705
+        },
+        {
+          "key" : "earn",
+          "doc_count" : 80558
+        },
+        {
+          "key" : "word",
+          "doc_count" : 80437
+        },
+        {
+          "key" : "para",
+          "doc_count" : 80404
+        },
+        {
+          "key" : "f",
+          "doc_count" : 80305
+        },
+        {
+          "key" : "ど",
+          "doc_count" : 79981
+        },
+        {
+          "key" : "nigga",
+          "doc_count" : 79823
+        },
+        {
+          "key" : "might",
+          "doc_count" : 79139
+        },
+        {
+          "key" : "eu",
+          "doc_count" : 78937
+        },
+        {
+          "key" : "plan",
+          "doc_count" : 78756
+        },
+        {
+          "key" : "summer",
+          "doc_count" : 78743
+        },
+        {
+          "key" : "ち",
+          "doc_count" : 78696
+        },
+        {
+          "key" : "ain't",
+          "doc_count" : 77254
+        },
+        {
+          "key" : "fall",
+          "doc_count" : 76822
+        },
+        {
+          "key" : "anyth",
+          "doc_count" : 76563
+        },
+        {
+          "key" : "break",
+          "doc_count" : 76307
+        },
+        {
+          "key" : "busi",
+          "doc_count" : 76140
+        },
+        {
+          "key" : "mi",
+          "doc_count" : 75770
+        },
+        {
+          "key" : "9",
+          "doc_count" : 75296
+        },
+        {
+          "key" : "eat",
+          "doc_count" : 75261
+        },
+        {
+          "key" : "point",
+          "doc_count" : 75114
+        },
+        {
+          "key" : "lmao",
+          "doc_count" : 74304
+        },
+        {
+          "key" : "rain",
+          "doc_count" : 74192
+        },
+        {
+          "key" : "turn",
+          "doc_count" : 74165
+        },
+        {
+          "key" : "ok",
+          "doc_count" : 73964
+        },
+        {
+          "key" : "left",
+          "doc_count" : 73906
+        },
+        {
+          "key" : "leav",
+          "doc_count" : 73836
+        },
+        {
+          "key" : "nation",
+          "doc_count" : 73750
+        },
+        {
+          "key" : "20",
+          "doc_count" : 73748
+        },
+        {
+          "key" : "yeah",
+          "doc_count" : 73474
+        },
+        {
+          "key" : "100",
+          "doc_count" : 73395
+        },
+        {
+          "key" : "enter",
+          "doc_count" : 73390
+        },
+        {
+          "key" : "share",
+          "doc_count" : 73346
+        },
+        {
+          "key" : "hear",
+          "doc_count" : 73282
+        },
+        {
+          "key" : "myself",
+          "doc_count" : 73028
+        },
+        {
+          "key" : "caus",
+          "doc_count" : 73024
+        },
+        {
+          "key" : "ad",
+          "doc_count" : 72893
+        },
+        {
+          "key" : "mom",
+          "doc_count" : 72874
+        },
+        {
+          "key" : "fan",
+          "doc_count" : 72788
+        },
+        {
+          "key" : "true",
+          "doc_count" : 72718
+        },
+        {
+          "key" : "favorit",
+          "doc_count" : 72614
+        },
+        {
+          "key" : "wonder",
+          "doc_count" : 72480
+        },
+        {
+          "key" : "there",
+          "doc_count" : 72407
+        },
+        {
+          "key" : "walk",
+          "doc_count" : 72274
+        },
+        {
+          "key" : "face",
+          "doc_count" : 71958
+        },
+        {
+          "key" : "citi",
+          "doc_count" : 71646
+        },
+        {
+          "key" : "hi",
+          "doc_count" : 71183
+        },
+        {
+          "key" : "11",
+          "doc_count" : 71124
+        },
+        {
+          "key" : "b",
+          "doc_count" : 71005
+        },
+        {
+          "key" : "giveaway",
+          "doc_count" : 70930
+        },
+        {
+          "key" : "awesom",
+          "doc_count" : 70716
+        },
+        {
+          "key" : "must",
+          "doc_count" : 70658
+        },
+        {
+          "key" : "student",
+          "doc_count" : 70187
+        },
+        {
+          "key" : "excit",
+          "doc_count" : 70033
+        },
+        {
+          "key" : "click",
+          "doc_count" : 69948
+        },
+        {
+          "key" : "wind",
+          "doc_count" : 69939
+        },
+        {
+          "key" : "without",
+          "doc_count" : 69853
+        },
+        {
+          "key" : "women",
+          "doc_count" : 69827
+        },
+        {
+          "key" : "sinc",
+          "doc_count" : 69308
+        },
+        {
+          "key" : "mind",
+          "doc_count" : 69174
+        },
+        {
+          "key" : "save",
+          "doc_count" : 68838
+        },
+        {
+          "key" : "bring",
+          "doc_count" : 68771
+        },
+        {
+          "key" : "set",
+          "doc_count" : 68766
+        },
+        {
+          "key" : "co",
+          "doc_count" : 68663
+        },
+        {
+          "key" : "12",
+          "doc_count" : 68624
+        },
+        {
+          "key" : "wrong",
+          "doc_count" : 68273
+        },
+        {
+          "key" : "reason",
+          "doc_count" : 68254
+        },
+        {
+          "key" : "retweet",
+          "doc_count" : 68034
+        },
+        {
+          "key" : "presid",
+          "doc_count" : 67951
+        },
+        {
+          "key" : "award",
+          "doc_count" : 67783
+        },
+        {
+          "key" : "yourself",
+          "doc_count" : 67781
+        },
+        {
+          "key" : "isn't",
+          "doc_count" : 67374
+        },
+        {
+          "key" : "won't",
+          "doc_count" : 67202
+        },
+        {
+          "key" : "dog",
+          "doc_count" : 67110
+        },
+        {
+          "key" : "bts_twt",
+          "doc_count" : 67087
+        },
+        {
+          "key" : "bless",
+          "doc_count" : 67032
+        },
+        {
+          "key" : "car",
+          "doc_count" : 66937
+        },
+        {
+          "key" : "hand",
+          "doc_count" : 66813
+        },
+        {
+          "key" : "gotta",
+          "doc_count" : 66431
+        },
+        {
+          "key" : "draft",
+          "doc_count" : 66329
+        },
+        {
+          "key" : "yet",
+          "doc_count" : 66135
+        },
+        {
+          "key" : "pay",
+          "doc_count" : 65931
+        },
+        {
+          "key" : "becom",
+          "doc_count" : 65683
+        },
+        {
+          "key" : "c",
+          "doc_count" : 65645
+        },
+        {
+          "key" : "congrat",
+          "doc_count" : 65384
+        },
+        {
+          "key" : "differ",
+          "doc_count" : 65191
+        },
+        {
+          "key" : "which",
+          "doc_count" : 64752
+        },
+        {
+          "key" : "american",
+          "doc_count" : 64655
+        },
+        {
+          "key" : "da",
+          "doc_count" : 64638
+        },
+        {
+          "key" : "april",
+          "doc_count" : 64599
+        },
+        {
+          "key" : "weather",
+          "doc_count" : 64563
+        },
+        {
+          "key" : "btsbbmas",
+          "doc_count" : 64554
+        },
+        {
+          "key" : "bill",
+          "doc_count" : 64356
+        },
+        {
+          "key" : "d",
+          "doc_count" : 64318
+        },
+        {
+          "key" : "ね",
+          "doc_count" : 64215
+        },
+        {
+          "key" : "lie",
+          "doc_count" : 64129
+        },
+        {
+          "key" : "0",
+          "doc_count" : 64062
+        },
+        {
+          "key" : "わ",
+          "doc_count" : 64002
+        },
+        {
+          "key" : "i'd",
+          "doc_count" : 63877
+        },
+        {
+          "key" : "liter",
+          "doc_count" : 63736
+        },
+        {
+          "key" : "h",
+          "doc_count" : 63693
+        },
+        {
+          "key" : "そ",
+          "doc_count" : 63503
+        },
+        {
+          "key" : "pm",
+          "doc_count" : 63415
+        },
+        {
+          "key" : "snow",
+          "doc_count" : 63347
+        },
+        {
+          "key" : "enjoy",
+          "doc_count" : 63001
+        },
+        {
+          "key" : "sad",
+          "doc_count" : 62611
+        },
+        {
+          "key" : "welcom",
+          "doc_count" : 62335
+        },
+        {
+          "key" : "parti",
+          "doc_count" : 62222
+        },
+        {
+          "key" : "both",
+          "doc_count" : 62120
+        },
+        {
+          "key" : "colleg",
+          "doc_count" : 61964
+        },
+        {
+          "key" : "power",
+          "doc_count" : 61810
+        },
+        {
+          "key" : "sale",
+          "doc_count" : 61640
+        },
+        {
+          "key" : "red",
+          "doc_count" : 61446
+        },
+        {
+          "key" : "food",
+          "doc_count" : 61338
+        },
+        {
+          "key" : "omg",
+          "doc_count" : 61304
+        },
+        {
+          "key" : "fight",
+          "doc_count" : 61295
+        },
+        {
+          "key" : "whole",
+          "doc_count" : 61069
+        },
+        {
+          "key" : "full",
+          "doc_count" : 61046
+        },
+        {
+          "key" : "cool",
+          "doc_count" : 60900
+        },
+        {
+          "key" : "interest",
+          "doc_count" : 60880
+        },
+        {
+          "key" : "art",
+          "doc_count" : 60778
+        },
+        {
+          "key" : "15",
+          "doc_count" : 60609
+        },
+        {
+          "key" : "close",
+          "doc_count" : 60539
+        },
+        {
+          "key" : "friday",
+          "doc_count" : 60134
+        },
+        {
+          "key" : "enough",
+          "doc_count" : 60129
+        },
+        {
+          "key" : "al",
+          "doc_count" : 59970
+        },
+        {
+          "key" : "men",
+          "doc_count" : 59827
+        },
+        {
+          "key" : "cute",
+          "doc_count" : 59809
+        },
+        {
+          "key" : "pictur",
+          "doc_count" : 59802
+        },
+        {
+          "key" : "buy",
+          "doc_count" : 59729
+        },
+        {
+          "key" : "dude",
+          "doc_count" : 59649
+        },
+        {
+          "key" : "pass",
+          "doc_count" : 59585
+        },
+        {
+          "key" : "cri",
+          "doc_count" : 59558
+        },
+        {
+          "key" : "spring",
+          "doc_count" : 59400
+        },
+        {
+          "key" : "found",
+          "doc_count" : 59249
+        },
+        {
+          "key" : "seen",
+          "doc_count" : 59118
+        },
+        {
+          "key" : "mt",
+          "doc_count" : 59062
+        },
+        {
+          "key" : "http",
+          "doc_count" : 59002
+        },
+        {
+          "key" : "00",
+          "doc_count" : 58880
+        },
+        {
+          "key" : "sorri",
+          "doc_count" : 58780
+        },
+        {
+          "key" : "una",
+          "doc_count" : 58764
+        },
+        {
+          "key" : "r",
+          "doc_count" : 58444
+        },
+        {
+          "key" : "日",
+          "doc_count" : 58436
+        },
+        {
+          "key" : "mayb",
+          "doc_count" : 58099
+        },
+        {
+          "key" : "ゃ",
+          "doc_count" : 58046
+        },
+        {
+          "key" : "ur",
+          "doc_count" : 57909
+        },
+        {
+          "key" : "onc",
+          "doc_count" : 57904
+        },
+        {
+          "key" : "els",
+          "doc_count" : 57862
+        },
+        {
+          "key" : "date",
+          "doc_count" : 57697
+        },
+        {
+          "key" : "dream",
+          "doc_count" : 57439
+        },
+        {
+          "key" : "late",
+          "doc_count" : 57401
+        },
+        {
+          "key" : "send",
+          "doc_count" : 57399
+        },
+        {
+          "key" : "soon",
+          "doc_count" : 57251
+        },
+        {
+          "key" : "drive",
+          "doc_count" : 57244
+        },
+        {
+          "key" : "fit",
+          "doc_count" : 57186
+        },
+        {
+          "key" : "question",
+          "doc_count" : 56930
+        },
+        {
+          "key" : "sound",
+          "doc_count" : 56761
+        },
+        {
+          "key" : "hell",
+          "doc_count" : 56760
+        },
+        {
+          "key" : "vs",
+          "doc_count" : 56649
+        },
+        {
+          "key" : "war",
+          "doc_count" : 56420
+        },
+        {
+          "key" : "son",
+          "doc_count" : 56359
+        },
+        {
+          "key" : "countri",
+          "doc_count" : 56344
+        },
+        {
+          "key" : "phone",
+          "doc_count" : 56138
+        },
+        {
+          "key" : "del",
+          "doc_count" : 56044
+        },
+        {
+          "key" : "fact",
+          "doc_count" : 56011
+        },
+        {
+          "key" : "fire",
+          "doc_count" : 55950
+        },
+        {
+          "key" : "las",
+          "doc_count" : 55888
+        },
+        {
+          "key" : "against",
+          "doc_count" : 55857
+        },
+        {
+          "key" : "え",
+          "doc_count" : 55827
+        },
+        {
+          "key" : "minut",
+          "doc_count" : 55557
+        },
+        {
+          "key" : "hot",
+          "doc_count" : 55470
+        },
+        {
+          "key" : "problem",
+          "doc_count" : 55411
+        },
+        {
+          "key" : "perfect",
+          "doc_count" : 55321
+        },
+        {
+          "key" : "proud",
+          "doc_count" : 55254
+        },
+        {
+          "key" : "idea",
+          "doc_count" : 54970
+        },
+        {
+          "key" : "eye",
+          "doc_count" : 54914
+        },
+        {
+          "key" : "hold",
+          "doc_count" : 54589
+        },
+        {
+          "key" : "sometim",
+          "doc_count" : 54452
+        },
+        {
+          "key" : "17",
+          "doc_count" : 54385
+        },
+        {
+          "key" : "second",
+          "doc_count" : 54313
+        },
+        {
+          "key" : "et",
+          "doc_count" : 54155
+        },
+        {
+          "key" : "probabl",
+          "doc_count" : 54040
+        },
+        {
+          "key" : "guess",
+          "doc_count" : 54018
+        },
+        {
+          "key" : "tu",
+          "doc_count" : 53896
+        },
+        {
+          "key" : "few",
+          "doc_count" : 53847
+        },
+        {
+          "key" : "woman",
+          "doc_count" : 53827
+        },
+        {
+          "key" : "water",
+          "doc_count" : 53722
+        },
+        {
+          "key" : "park",
+          "doc_count" : 53636
+        },
+        {
+          "key" : "understand",
+          "doc_count" : 53590
+        },
+        {
+          "key" : "offici",
+          "doc_count" : 53554
+        },
+        {
+          "key" : "prom",
+          "doc_count" : 53333
+        },
+        {
+          "key" : "okay",
+          "doc_count" : 53271
+        },
+        {
+          "key" : "went",
+          "doc_count" : 53022
+        },
+        {
+          "key" : "health",
+          "doc_count" : 52896
+        },
+        {
+          "key" : "les",
+          "doc_count" : 52630
+        },
+        {
+          "key" : "line",
+          "doc_count" : 52446
+        },
+        {
+          "key" : "ladi",
+          "doc_count" : 52289
+        },
+        {
+          "key" : "dead",
+          "doc_count" : 52267
+        },
+        {
+          "key" : "star",
+          "doc_count" : 52144
+        },
+        {
+          "key" : "rock",
+          "doc_count" : 52138
+        },
+        {
+          "key" : "crazi",
+          "doc_count" : 52037
+        },
+        {
+          "key" : "ko",
+          "doc_count" : 52031
+        },
+        {
+          "key" : "hurt",
+          "doc_count" : 51996
+        },
+        {
+          "key" : "lost",
+          "doc_count" : 51937
+        },
+        {
+          "key" : "futur",
+          "doc_count" : 51839
+        },
+        {
+          "key" : "sa",
+          "doc_count" : 51725
+        },
+        {
+          "key" : "drink",
+          "doc_count" : 51722
+        },
+        {
+          "key" : "lose",
+          "doc_count" : 51706
+        },
+        {
+          "key" : "lead",
+          "doc_count" : 51671
+        },
+        {
+          "key" : "stand",
+          "doc_count" : 51657
+        },
+        {
+          "key" : "singl",
+          "doc_count" : 51491
+        },
+        {
+          "key" : "من",
+          "doc_count" : 51440
+        },
+        {
+          "key" : "though",
+          "doc_count" : 51399
+        },
+        {
+          "key" : "人",
+          "doc_count" : 51375
+        },
+        {
+          "key" : "je",
+          "doc_count" : 51290
+        },
+        {
+          "key" : "light",
+          "doc_count" : 51256
+        },
+        {
+          "key" : "à",
+          "doc_count" : 51158
+        },
+        {
+          "key" : "potus",
+          "doc_count" : 51131
+        },
+        {
+          "key" : "they'r",
+          "doc_count" : 50922
+        },
+        {
+          "key" : "serious",
+          "doc_count" : 50821
+        },
+        {
+          "key" : "drop",
+          "doc_count" : 50802
+        },
+        {
+          "key" : "facebook",
+          "doc_count" : 50548
+        },
+        {
+          "key" : "player",
+          "doc_count" : 50502
+        },
+        {
+          "key" : "funni",
+          "doc_count" : 50417
+        },
+        {
+          "key" : "list",
+          "doc_count" : 50281
+        },
+        {
+          "key" : "order",
+          "doc_count" : 50246
+        },
+        {
+          "key" : "media",
+          "doc_count" : 50188
+        },
+        {
+          "key" : "issu",
+          "doc_count" : 50166
+        },
+        {
+          "key" : "め",
+          "doc_count" : 50090
+        },
+        {
+          "key" : "togeth",
+          "doc_count" : 49950
+        },
+        {
+          "key" : "updat",
+          "doc_count" : 49877
+        },
+        {
+          "key" : "み",
+          "doc_count" : 49634
+        },
+        {
+          "key" : "event",
+          "doc_count" : 49599
+        },
+        {
+          "key" : "haha",
+          "doc_count" : 49580
+        },
+        {
+          "key" : "mplusreward",
+          "doc_count" : 49490
+        },
+        {
+          "key" : "almost",
+          "doc_count" : 49453
+        },
+        {
+          "key" : "kind",
+          "doc_count" : 49215
+        },
+        {
+          "key" : "offic",
+          "doc_count" : 49141
+        },
+        {
+          "key" : "tire",
+          "doc_count" : 49102
+        },
+        {
+          "key" : "quot",
+          "doc_count" : 48977
+        },
+        {
+          "key" : "servic",
+          "doc_count" : 48890
+        },
+        {
+          "key" : "つ",
+          "doc_count" : 48832
+        },
+        {
+          "key" : "travel",
+          "doc_count" : 48755
+        },
+        {
+          "key" : "dont",
+          "doc_count" : 48736
+        },
+        {
+          "key" : "celebr",
+          "doc_count" : 48716
+        },
+        {
+          "key" : "movi",
+          "doc_count" : 48615
+        },
+        {
+          "key" : "é",
+          "doc_count" : 48611
+        },
+        {
+          "key" : "wear",
+          "doc_count" : 48560
+        },
+        {
+          "key" : "seem",
+          "doc_count" : 48507
+        },
+        {
+          "key" : "honest",
+          "doc_count" : 48423
+        },
+        {
+          "key" : "track",
+          "doc_count" : 48359
+        },
+        {
+          "key" : "gone",
+          "doc_count" : 48349
+        },
+        {
+          "key" : "como",
+          "doc_count" : 48249
+        },
+        {
+          "key" : "1st",
+          "doc_count" : 48188
+        },
+        {
+          "key" : "bed",
+          "doc_count" : 48114
+        },
+        {
+          "key" : "pic",
+          "doc_count" : 48107
+        },
+        {
+          "key" : "finish",
+          "doc_count" : 48082
+        },
+        {
+          "key" : "rn",
+          "doc_count" : 48018
+        },
+        {
+          "key" : "goal",
+          "doc_count" : 47790
+        },
+        {
+          "key" : "visit",
+          "doc_count" : 47584
+        },
+        {
+          "key" : "continu",
+          "doc_count" : 47395
+        },
+        {
+          "key" : "deal",
+          "doc_count" : 47336
+        },
+        {
+          "key" : "saturday",
+          "doc_count" : 47305
+        },
+        {
+          "key" : "50",
+          "doc_count" : 47249
+        },
+        {
+          "key" : "told",
+          "doc_count" : 47161
+        },
+        {
+          "key" : "america",
+          "doc_count" : 47106
+        },
+        {
+          "key" : "todo",
+          "doc_count" : 47040
+        },
+        {
+          "key" : "mai",
+          "doc_count" : 47022
+        },
+        {
+          "key" : "bro",
+          "doc_count" : 46794
+        },
+        {
+          "key" : "est",
+          "doc_count" : 46770
+        },
+        {
+          "key" : "hair",
+          "doc_count" : 46702
+        },
+        {
+          "key" : "build",
+          "doc_count" : 46440
+        },
+        {
+          "key" : "bc",
+          "doc_count" : 46432
+        },
+        {
+          "key" : "round",
+          "doc_count" : 46375
+        },
+        {
+          "key" : "m",
+          "doc_count" : 46356
+        },
+        {
+          "key" : "north",
+          "doc_count" : 46348
+        },
+        {
+          "key" : "cut",
+          "doc_count" : 46327
+        },
+        {
+          "key" : "under",
+          "doc_count" : 46309
+        },
+        {
+          "key" : "goe",
+          "doc_count" : 46300
+        },
+        {
+          "key" : "special",
+          "doc_count" : 46297
+        },
+        {
+          "key" : "young",
+          "doc_count" : 46286
+        },
+        {
+          "key" : "suck",
+          "doc_count" : 46267
+        },
+        {
+          "key" : "wall",
+          "doc_count" : 46077
+        },
+        {
+          "key" : "beat",
+          "doc_count" : 46029
+        },
+        {
+          "key" : "appreci",
+          "doc_count" : 45983
+        },
+        {
+          "key" : "act",
+          "doc_count" : 45825
+        },
+        {
+          "key" : "forget",
+          "doc_count" : 45702
+        },
+        {
+          "key" : "ago",
+          "doc_count" : 45649
+        },
+        {
+          "key" : "dure",
+          "doc_count" : 45308
+        },
+        {
+          "key" : "low",
+          "doc_count" : 45305
+        },
+        {
+          "key" : "public",
+          "doc_count" : 45185
+        },
+        {
+          "key" : "じ",
+          "doc_count" : 45180
+        },
+        {
+          "key" : "far",
+          "doc_count" : 45179
+        },
+        {
+          "key" : "p",
+          "doc_count" : 45159
+        },
+        {
+          "key" : "matter",
+          "doc_count" : 45136
+        },
+        {
+          "key" : "pero",
+          "doc_count" : 44905
+        },
+        {
+          "key" : "pas",
+          "doc_count" : 44723
+        },
+        {
+          "key" : "speak",
+          "doc_count" : 44618
+        },
+        {
+          "key" : "laugh",
+          "doc_count" : 44601
+        },
+        {
+          "key" : "complet",
+          "doc_count" : 44550
+        },
+        {
+          "key" : "seri",
+          "doc_count" : 44535
+        },
+        {
+          "key" : "view",
+          "doc_count" : 44408
+        },
+        {
+          "key" : "não",
+          "doc_count" : 44347
+        },
+        {
+          "key" : "bodi",
+          "doc_count" : 44334
+        },
+        {
+          "key" : "ー",
+          "doc_count" : 44305
+        },
+        {
+          "key" : "congratul",
+          "doc_count" : 44291
+        },
+        {
+          "key" : "em",
+          "doc_count" : 44134
+        },
+        {
+          "key" : "took",
+          "doc_count" : 43972
+        },
+        {
+          "key" : "di",
+          "doc_count" : 43702
+        },
+        {
+          "key" : "13",
+          "doc_count" : 43698
+        },
+        {
+          "key" : "group",
+          "doc_count" : 43664
+        },
+        {
+          "key" : "deserv",
+          "doc_count" : 43498
+        },
+        {
+          "key" : "moment",
+          "doc_count" : 43439
+        },
+        {
+          "key" : "step",
+          "doc_count" : 43425
+        },
+        {
+          "key" : "past",
+          "doc_count" : 43289
+        },
+        {
+          "key" : "daili",
+          "doc_count" : 43113
+        },
+        {
+          "key" : "remind",
+          "doc_count" : 43066
+        },
+        {
+          "key" : "grow",
+          "doc_count" : 42914
+        },
+        {
+          "key" : "creat",
+          "doc_count" : 42873
+        },
+        {
+          "key" : "import",
+          "doc_count" : 42820
+        },
+        {
+          "key" : "avail",
+          "doc_count" : 42737
+        },
+        {
+          "key" : "current",
+          "doc_count" : 42642
+        },
+        {
+          "key" : "q",
+          "doc_count" : 42599
+        },
+        {
+          "key" : "obama",
+          "doc_count" : 42526
+        },
+        {
+          "key" : "manag",
+          "doc_count" : 42274
+        },
+        {
+          "key" : "shot",
+          "doc_count" : 42239
+        },
+        {
+          "key" : "lt",
+          "doc_count" : 42081
+        },
+        {
+          "key" : "agre",
+          "doc_count" : 42078
+        },
+        {
+          "key" : "gift",
+          "doc_count" : 42045
+        },
+        {
+          "key" : "relationship",
+          "doc_count" : 41873
+        },
+        {
+          "key" : "room",
+          "doc_count" : 41801
+        },
+        {
+          "key" : "counti",
+          "doc_count" : 41745
+        },
+        {
+          "key" : "realiz",
+          "doc_count" : 41565
+        },
+        {
+          "key" : "appli",
+          "doc_count" : 41424
+        },
+        {
+          "key" : "link",
+          "doc_count" : 41416
+        },
+        {
+          "key" : "pour",
+          "doc_count" : 41397
+        },
+        {
+          "key" : "super",
+          "doc_count" : 41382
+        },
+        {
+          "key" : "في",
+          "doc_count" : 41355
+        },
+        {
+          "key" : "saw",
+          "doc_count" : 41354
+        },
+        {
+          "key" : "stream",
+          "doc_count" : 41347
+        },
+        {
+          "key" : "success",
+          "doc_count" : 41252
+        },
+        {
+          "key" : "sweet",
+          "doc_count" : 41130
+        },
+        {
+          "key" : "ne",
+          "doc_count" : 41109
+        },
+        {
+          "key" : "side",
+          "doc_count" : 41072
+        },
+        {
+          "key" : "dad",
+          "doc_count" : 41065
+        },
+        {
+          "key" : "market",
+          "doc_count" : 41033
+        },
+        {
+          "key" : "blue",
+          "doc_count" : 40863
+        },
+        {
+          "key" : "between",
+          "doc_count" : 40843
+        },
+        {
+          "key" : "write",
+          "doc_count" : 40777
+        },
+        {
+          "key" : "tho",
+          "doc_count" : 40739
+        },
+        {
+          "key" : "came",
+          "doc_count" : 40715
+        },
+        {
+          "key" : "tax",
+          "doc_count" : 40708
+        },
+        {
+          "key" : "25",
+          "doc_count" : 40663
+        },
+        {
+          "key" : "worth",
+          "doc_count" : 40623
+        },
+        {
+          "key" : "luck",
+          "doc_count" : 40618
+        },
+        {
+          "key" : "monday",
+          "doc_count" : 40578
+        },
+        {
+          "key" : "test",
+          "doc_count" : 40460
+        },
+        {
+          "key" : "record",
+          "doc_count" : 40428
+        },
+        {
+          "key" : "recommend",
+          "doc_count" : 40388
+        },
+        {
+          "key" : "ろ",
+          "doc_count" : 40363
+        },
+        {
+          "key" : "fake",
+          "doc_count" : 40353
+        },
+        {
+          "key" : "million",
+          "doc_count" : 40322
+        },
+        {
+          "key" : "l",
+          "doc_count" : 40312
+        },
+        {
+          "key" : "human",
+          "doc_count" : 40170
+        },
+        {
+          "key" : "each",
+          "doc_count" : 40020
+        },
+        {
+          "key" : "joke",
+          "doc_count" : 39932
+        },
+        {
+          "key" : "near",
+          "doc_count" : 39845
+        },
+        {
+          "key" : "stuff",
+          "doc_count" : 39780
+        },
+        {
+          "key" : "road",
+          "doc_count" : 39738
+        },
+        {
+          "key" : "brother",
+          "doc_count" : 39729
+        },
+        {
+          "key" : "text",
+          "doc_count" : 39726
+        },
+        {
+          "key" : "least",
+          "doc_count" : 39690
+        },
+        {
+          "key" : "senior",
+          "doc_count" : 39677
+        },
+        {
+          "key" : "sunday",
+          "doc_count" : 39642
+        },
+        {
+          "key" : "inspir",
+          "doc_count" : 39523
+        },
+        {
+          "key" : "review",
+          "doc_count" : 39498
+        },
+        {
+          "key" : "non",
+          "doc_count" : 39475
+        },
+        {
+          "key" : "trust",
+          "doc_count" : 39230
+        },
+        {
+          "key" : "il",
+          "doc_count" : 39206
+        },
+        {
+          "key" : "basebal",
+          "doc_count" : 39190
+        },
+        {
+          "key" : "lil",
+          "doc_count" : 39077
+        },
+        {
+          "key" : "sit",
+          "doc_count" : 39028
+        },
+        {
+          "key" : "anim",
+          "doc_count" : 38913
+        },
+        {
+          "key" : "cover",
+          "doc_count" : 38862
+        },
+        {
+          "key" : "earli",
+          "doc_count" : 38832
+        },
+        {
+          "key" : "ticket",
+          "doc_count" : 38761
+        },
+        {
+          "key" : "app",
+          "doc_count" : 38671
+        },
+        {
+          "key" : "ball",
+          "doc_count" : 38623
+        },
+        {
+          "key" : "expect",
+          "doc_count" : 38623
+        },
+        {
+          "key" : "mad",
+          "doc_count" : 38606
+        },
+        {
+          "key" : "three",
+          "doc_count" : 38428
+        },
+        {
+          "key" : "histori",
+          "doc_count" : 38374
+        },
+        {
+          "key" : "clear",
+          "doc_count" : 38348
+        },
+        {
+          "key" : "haven't",
+          "doc_count" : 38333
+        },
+        {
+          "key" : "見",
+          "doc_count" : 38284
+        },
+        {
+          "key" : "parent",
+          "doc_count" : 38168
+        },
+        {
+          "key" : "area",
+          "doc_count" : 38099
+        },
+        {
+          "key" : "24",
+          "doc_count" : 38071
+        },
+        {
+          "key" : "case",
+          "doc_count" : 37991
+        },
+        {
+          "key" : "easi",
+          "doc_count" : 37953
+        },
+        {
+          "key" : "color",
+          "doc_count" : 37883
+        },
+        {
+          "key" : "hahaha",
+          "doc_count" : 37879
+        },
+        {
+          "key" : "truth",
+          "doc_count" : 37800
+        },
+        {
+          "key" : "heard",
+          "doc_count" : 37682
+        },
+        {
+          "key" : "mo",
+          "doc_count" : 37682
+        },
+        {
+          "key" : "wake",
+          "doc_count" : 37650
+        },
+        {
+          "key" : "less",
+          "doc_count" : 37641
+        },
+        {
+          "key" : "roll",
+          "doc_count" : 37348
+        },
+        {
+          "key" : "mine",
+          "doc_count" : 37284
+        },
+        {
+          "key" : "bbmas",
+          "doc_count" : 37234
+        },
+        {
+          "key" : "spend",
+          "doc_count" : 37232
+        },
+        {
+          "key" : "t.c",
+          "doc_count" : 37230
+        },
+        {
+          "key" : "detail",
+          "doc_count" : 37164
+        },
+        {
+          "key" : "john",
+          "doc_count" : 37130
+        },
+        {
+          "key" : "definit",
+          "doc_count" : 37033
+        },
+        {
+          "key" : "x",
+          "doc_count" : 36973
+        },
+        {
+          "key" : "glad",
+          "doc_count" : 36919
+        },
+        {
+          "key" : "posit",
+          "doc_count" : 36903
+        },
+        {
+          "key" : "educ",
+          "doc_count" : 36880
+        },
+        {
+          "key" : "forev",
+          "doc_count" : 36776
+        },
+        {
+          "key" : "stupid",
+          "doc_count" : 36769
+        },
+        {
+          "key" : "mother",
+          "doc_count" : 36668
+        },
+        {
+          "key" : "tour",
+          "doc_count" : 36572
+        },
+        {
+          "key" : "hello",
+          "doc_count" : 36534
+        },
+        {
+          "key" : "small",
+          "doc_count" : 36527
+        },
+        {
+          "key" : "number",
+          "doc_count" : 36391
+        },
+        {
+          "key" : "answer",
+          "doc_count" : 36323
+        },
+        {
+          "key" : "trip",
+          "doc_count" : 36291
+        },
+        {
+          "key" : "total",
+          "doc_count" : 36265
+        },
+        {
+          "key" : "half",
+          "doc_count" : 36199
+        },
+        {
+          "key" : "dan",
+          "doc_count" : 36189
+        },
+        {
+          "key" : "short",
+          "doc_count" : 36113
+        },
+        {
+          "key" : "14",
+          "doc_count" : 36039
+        },
+        {
+          "key" : "sport",
+          "doc_count" : 36006
+        },
+        {
+          "key" : "anymor",
+          "doc_count" : 35987
+        },
+        {
+          "key" : "18",
+          "doc_count" : 35928
+        },
+        {
+          "key" : "sick",
+          "doc_count" : 35916
+        },
+        {
+          "key" : "playlist",
+          "doc_count" : 35888
+        },
+        {
+          "key" : "yesterday",
+          "doc_count" : 35822
+        },
+        {
+          "key" : "account",
+          "doc_count" : 35799
+        },
+        {
+          "key" : "cat",
+          "doc_count" : 35776
+        },
+        {
+          "key" : "announc",
+          "doc_count" : 35697
+        },
+        {
+          "key" : "polic",
+          "doc_count" : 35598
+        },
+        {
+          "key" : "idk",
+          "doc_count" : 35587
+        },
+        {
+          "key" : "releas",
+          "doc_count" : 35586
+        },
+        {
+          "key" : "throw",
+          "doc_count" : 35554
+        },
+        {
+          "key" : "natur",
+          "doc_count" : 35551
+        },
+        {
+          "key" : "exact",
+          "doc_count" : 35550
+        },
+        {
+          "key" : "studi",
+          "doc_count" : 35434
+        },
+        {
+          "key" : "offer",
+          "doc_count" : 35403
+        },
+        {
+          "key" : "今",
+          "doc_count" : 35399
+        },
+        {
+          "key" : "g",
+          "doc_count" : 35327
+        },
+        {
+          "key" : "cancer",
+          "doc_count" : 35306
+        },
+        {
+          "key" : "you'll",
+          "doc_count" : 35279
+        },
+        {
+          "key" : "train",
+          "doc_count" : 35265
+        },
+        {
+          "key" : "death",
+          "doc_count" : 35255
+        },
+        {
+          "key" : "su",
+          "doc_count" : 35244
+        },
+        {
+          "key" : "coach",
+          "doc_count" : 35160
+        },
+        {
+          "key" : "af",
+          "doc_count" : 35001
+        },
+        {
+          "key" : "rest",
+          "doc_count" : 34969
+        },
+        {
+          "key" : "wtf",
+          "doc_count" : 34897
+        },
+        {
+          "key" : "mas",
+          "doc_count" : 34862
+        },
+        {
+          "key" : "career",
+          "doc_count" : 34838
+        },
+        {
+          "key" : "せ",
+          "doc_count" : 34769
+        },
+        {
+          "key" : "episod",
+          "doc_count" : 34753
+        },
+        {
+          "key" : "self",
+          "doc_count" : 34751
+        },
+        {
+          "key" : "south",
+          "doc_count" : 34736
+        },
+        {
+          "key" : "met",
+          "doc_count" : 34687
+        },
+        {
+          "key" : "instead",
+          "doc_count" : 34682
+        },
+        {
+          "key" : "pa",
+          "doc_count" : 34673
+        },
+        {
+          "key" : "um",
+          "doc_count" : 34553
+        },
+        {
+          "key" : "nfl",
+          "doc_count" : 34460
+        },
+        {
+          "key" : "fail",
+          "doc_count" : 34415
+        },
+        {
+          "key" : "product",
+          "doc_count" : 34413
+        },
+        {
+          "key" : "worri",
+          "doc_count" : 34374
+        },
+        {
+          "key" : "smile",
+          "doc_count" : 34327
+        },
+        {
+          "key" : "strong",
+          "doc_count" : 34306
+        },
+        {
+          "key" : "más",
+          "doc_count" : 34219
+        },
+        {
+          "key" : "ride",
+          "doc_count" : 34179
+        },
+        {
+          "key" : "pop",
+          "doc_count" : 34142
+        },
+        {
+          "key" : "communiti",
+          "doc_count" : 34082
+        },
+        {
+          "key" : "nfldraft",
+          "doc_count" : 34017
+        },
+        {
+          "key" : "ni",
+          "doc_count" : 34007
+        },
+        {
+          "key" : "either",
+          "doc_count" : 33991
+        },
+        {
+          "key" : "begin",
+          "doc_count" : 33972
+        },
+        {
+          "key" : "newprofilep",
+          "doc_count" : 33970
+        },
+        {
+          "key" : "htt",
+          "doc_count" : 33961
+        },
+        {
+          "key" : "card",
+          "doc_count" : 33943
+        },
+        {
+          "key" : "ma",
+          "doc_count" : 33917
+        },
+        {
+          "key" : "alon",
+          "doc_count" : 33893
+        },
+        {
+          "key" : "green",
+          "doc_count" : 33826
+        },
+        {
+          "key" : "c'est",
+          "doc_count" : 33768
+        },
+        {
+          "key" : "king",
+          "doc_count" : 33762
+        },
+        {
+          "key" : "protect",
+          "doc_count" : 33739
+        },
+        {
+          "key" : "wasn't",
+          "doc_count" : 33730
+        },
+        {
+          "key" : "absolut",
+          "doc_count" : 33729
+        },
+        {
+          "key" : "level",
+          "doc_count" : 33681
+        },
+        {
+          "key" : "receiv",
+          "doc_count" : 33675
+        },
+        {
+          "key" : "sister",
+          "doc_count" : 33670
+        },
+        {
+          "key" : "nobodi",
+          "doc_count" : 33631
+        },
+        {
+          "key" : "univers",
+          "doc_count" : 33554
+        },
+        {
+          "key" : "possibl",
+          "doc_count" : 33527
+        },
+        {
+          "key" : "graduat",
+          "doc_count" : 33479
+        },
+        {
+          "key" : "shop",
+          "doc_count" : 33419
+        },
+        {
+          "key" : "worst",
+          "doc_count" : 33402
+        },
+        {
+          "key" : "inch",
+          "doc_count" : 33364
+        },
+        {
+          "key" : "plus",
+          "doc_count" : 33296
+        },
+        {
+          "key" : "add",
+          "doc_count" : 33291
+        },
+        {
+          "key" : "st",
+          "doc_count" : 33150
+        },
+        {
+          "key" : "fast",
+          "doc_count" : 33141
+        },
+        {
+          "key" : "behind",
+          "doc_count" : 32979
+        },
+        {
+          "key" : "type",
+          "doc_count" : 32892
+        },
+        {
+          "key" : "law",
+          "doc_count" : 32878
+        },
+        {
+          "key" : "16",
+          "doc_count" : 32809
+        },
+        {
+          "key" : "project",
+          "doc_count" : 32795
+        },
+        {
+          "key" : "careerarc",
+          "doc_count" : 32755
+        },
+        {
+          "key" : "coupl",
+          "doc_count" : 32726
+        },
+        {
+          "key" : "treat",
+          "doc_count" : 32705
+        },
+        {
+          "key" : "onlin",
+          "doc_count" : 32661
+        },
+        {
+          "key" : "cours",
+          "doc_count" : 32618
+        },
+        {
+          "key" : "ht",
+          "doc_count" : 32597
+        },
+        {
+          "key" : "usa",
+          "doc_count" : 32595
+        },
+        {
+          "key" : "premiosmtvmiaw",
+          "doc_count" : 32557
+        },
+        {
+          "key" : "quit",
+          "doc_count" : 32482
+        },
+        {
+          "key" : "wouldn't",
+          "doc_count" : 32440
+        },
+        {
+          "key" : "page",
+          "doc_count" : 32359
+        },
+        {
+          "key" : "warn",
+          "doc_count" : 32356
+        },
+        {
+          "key" : "danc",
+          "doc_count" : 32342
+        },
+        {
+          "key" : "outsid",
+          "doc_count" : 32215
+        },
+        {
+          "key" : "attack",
+          "doc_count" : 32198
+        },
+        {
+          "key" : "tip",
+          "doc_count" : 32166
+        },
+        {
+          "key" : "ng",
+          "doc_count" : 32145
+        },
+        {
+          "key" : "k",
+          "doc_count" : 32105
+        },
+        {
+          "key" : "honor",
+          "doc_count" : 32104
+        },
+        {
+          "key" : "score",
+          "doc_count" : 32104
+        },
+        {
+          "key" : "gop",
+          "doc_count" : 32090
+        },
+        {
+          "key" : "2nd",
+          "doc_count" : 32015
+        },
+        {
+          "key" : "pray",
+          "doc_count" : 31968
+        },
+        {
+          "key" : "elect",
+          "doc_count" : 31929
+        },
+        {
+          "key" : "block",
+          "doc_count" : 31868
+        },
+        {
+          "key" : "19",
+          "doc_count" : 31847
+        },
+        {
+          "key" : "clean",
+          "doc_count" : 31840
+        },
+        {
+          "key" : "member",
+          "doc_count" : 31755
+        },
+        {
+          "key" : "mph",
+          "doc_count" : 31754
+        },
+        {
+          "key" : "dark",
+          "doc_count" : 31730
+        },
+        {
+          "key" : "straight",
+          "doc_count" : 31715
+        },
+        {
+          "key" : "child",
+          "doc_count" : 31686
+        },
+        {
+          "key" : "direct",
+          "doc_count" : 31678
+        },
+        {
+          "key" : "cnn",
+          "doc_count" : 31662
+        },
+        {
+          "key" : "jesus",
+          "doc_count" : 31547
+        },
+        {
+          "key" : "children",
+          "doc_count" : 31524
+        },
+        {
+          "key" : "store",
+          "doc_count" : 31498
+        },
+        {
+          "key" : "unit",
+          "doc_count" : 31450
+        },
+        {
+          "key" : "field",
+          "doc_count" : 31401
+        },
+        {
+          "key" : "later",
+          "doc_count" : 31375
+        },
+        {
+          "key" : "lake",
+          "doc_count" : 31347
+        },
+        {
+          "key" : "aren't",
+          "doc_count" : 31319
+        },
+        {
+          "key" : "polit",
+          "doc_count" : 31190
+        },
+        {
+          "key" : "press",
+          "doc_count" : 31134
+        },
+        {
+          "key" : "couldn't",
+          "doc_count" : 31086
+        },
+        {
+          "key" : "pull",
+          "doc_count" : 31069
+        },
+        {
+          "key" : "nurs",
+          "doc_count" : 31023
+        },
+        {
+          "key" : "humid",
+          "doc_count" : 31011
+        },
+        {
+          "key" : "piec",
+          "doc_count" : 30964
+        },
+        {
+          "key" : "perform",
+          "doc_count" : 30940
+        },
+        {
+          "key" : "fine",
+          "doc_count" : 30928
+        },
+        {
+          "key" : "you'v",
+          "doc_count" : 30927
+        },
+        {
+          "key" : "ha",
+          "doc_count" : 30923
+        },
+        {
+          "key" : "thursday",
+          "doc_count" : 30850
+        },
+        {
+          "key" : "return",
+          "doc_count" : 30810
+        },
+        {
+          "key" : "bit",
+          "doc_count" : 30806
+        },
+        {
+          "key" : "mark",
+          "doc_count" : 30804
+        },
+        {
+          "key" : "ppl",
+          "doc_count" : 30792
+        },
+        {
+          "key" : "quick",
+          "doc_count" : 30784
+        },
+        {
+          "key" : "exist",
+          "doc_count" : 30781
+        },
+        {
+          "key" : "va",
+          "doc_count" : 30737
+        },
+        {
+          "key" : "des",
+          "doc_count" : 30687
+        },
+        {
+          "key" : "action",
+          "doc_count" : 30672
+        },
+        {
+          "key" : "teacher",
+          "doc_count" : 30636
+        },
+        {
+          "key" : "album",
+          "doc_count" : 30615
+        },
+        {
+          "key" : "west",
+          "doc_count" : 30592
+        },
+        {
+          "key" : "sex",
+          "doc_count" : 30515
+        },
+        {
+          "key" : "stress",
+          "doc_count" : 30506
+        },
+        {
+          "key" : "shirt",
+          "doc_count" : 30484
+        },
+        {
+          "key" : "fair",
+          "doc_count" : 30480
+        },
+        {
+          "key" : "respect",
+          "doc_count" : 30432
+        },
+        {
+          "key" : "soul",
+          "doc_count" : 30337
+        },
+        {
+          "key" : "air",
+          "doc_count" : 30301
+        },
+        {
+          "key" : "lord",
+          "doc_count" : 30294
+        },
+        {
+          "key" : "fund",
+          "doc_count" : 30197
+        },
+        {
+          "key" : "texa",
+          "doc_count" : 30174
+        },
+        {
+          "key" : "grand",
+          "doc_count" : 30112
+        },
+        {
+          "key" : "imagin",
+          "doc_count" : 30079
+        },
+        {
+          "key" : "pack",
+          "doc_count" : 30054
+        },
+        {
+          "key" : "cuando",
+          "doc_count" : 30053
+        },
+        {
+          "key" : "v",
+          "doc_count" : 30040
+        },
+        {
+          "key" : "town",
+          "doc_count" : 30019
+        },
+        {
+          "key" : "shoot",
+          "doc_count" : 29982
+        },
+        {
+          "key" : "tv",
+          "doc_count" : 29978
+        },
+        {
+          "key" : "femal",
+          "doc_count" : 29966
+        },
+        {
+          "key" : "experi",
+          "doc_count" : 29950
+        },
+        {
+          "key" : "nyt",
+          "doc_count" : 29938
+        },
+        {
+          "key" : "mood",
+          "doc_count" : 29924
+        },
+        {
+          "key" : "messag",
+          "doc_count" : 29863
+        },
+        {
+          "key" : "catch",
+          "doc_count" : 29859
+        },
+        {
+          "key" : "program",
+          "doc_count" : 29835
+        },
+        {
+          "key" : "sell",
+          "doc_count" : 29822
+        },
+        {
+          "key" : "local",
+          "doc_count" : 29752
+        },
+        {
+          "key" : "race",
+          "doc_count" : 29733
+        },
+        {
+          "key" : "行",
+          "doc_count" : 29724
+        },
+        {
+          "key" : "brown",
+          "doc_count" : 29647
+        },
+        {
+          "key" : "control",
+          "doc_count" : 29615
+        },
+        {
+          "key" : "ako",
+          "doc_count" : 29571
+        },
+        {
+          "key" : "challeng",
+          "doc_count" : 29570
+        },
+        {
+          "key" : "ば",
+          "doc_count" : 29569
+        },
+        {
+          "key" : "allow",
+          "doc_count" : 29557
+        },
+        {
+          "key" : "ebay",
+          "doc_count" : 29549
+        },
+        {
+          "key" : "mile",
+          "doc_count" : 29481
+        },
+        {
+          "key" : "cold",
+          "doc_count" : 29422
+        },
+        {
+          "key" : "surpris",
+          "doc_count" : 29418
+        },
+        {
+          "key" : "till",
+          "doc_count" : 29410
+        },
+        {
+          "key" : "tuesday",
+          "doc_count" : 29391
+        },
+        {
+          "key" : "ice",
+          "doc_count" : 29350
+        },
+        {
+          "key" : "due",
+          "doc_count" : 29314
+        },
+        {
+          "key" : "winner",
+          "doc_count" : 29283
+        },
+        {
+          "key" : "ser",
+          "doc_count" : 29282
+        },
+        {
+          "key" : "forward",
+          "doc_count" : 29261
+        },
+        {
+          "key" : "price",
+          "doc_count" : 29261
+        },
+        {
+          "key" : "storm",
+          "doc_count" : 29199
+        },
+        {
+          "key" : "40",
+          "doc_count" : 29177
+        },
+        {
+          "key" : "swear",
+          "doc_count" : 29142
+        },
+        {
+          "key" : "insid",
+          "doc_count" : 29067
+        },
+        {
+          "key" : "bet",
+          "doc_count" : 29047
+        },
+        {
+          "key" : "forecast",
+          "doc_count" : 29044
+        },
+        {
+          "key" : "com",
+          "doc_count" : 28995
+        },
+        {
+          "key" : "somebodi",
+          "doc_count" : 28953
+        },
+        {
+          "key" : "land",
+          "doc_count" : 28937
+        },
+        {
+          "key" : "base",
+          "doc_count" : 28925
+        },
+        {
+          "key" : "center",
+          "doc_count" : 28909
+        },
+        {
+          "key" : "dr",
+          "doc_count" : 28757
+        }
+      ]
+    }
+  }
 }
