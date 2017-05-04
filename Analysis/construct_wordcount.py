@@ -18,7 +18,7 @@ def get_query(word1, word2):
     termFilter = [{ 'term': { 'content': word1 } }]
     if word1 != word2:
         termFilter.append( { 'term': { 'content': word2 } } )
-    return {'query': {'bool': {'filter': termFitler } } }
+    return {'query': {'bool': {'filter': termFilter } } }
 
 def loadMatrix():
     global countMatrix, wordlist
@@ -89,6 +89,6 @@ def queryEdge(word1, word2):
         index='twdata',
         doc_type='tweet',
         body=get_query(word1, word2)
-    )
+    )['count']
 
 code.interact(local=locals())
