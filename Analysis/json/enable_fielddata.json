@@ -1,6 +1,9 @@
 {
 	"properties": {
-		"content": { 
+		"content": {
+			"type": "text",
+			"analyzer": "eftychis_analyzer",
+			"term_vector": "yes",
 			"fielddata": true
 		}
 	}
