@@ -1,0 +1,10 @@
+{
+	"properties": {
+		"location": {
+			"type": "geo_point"
+		},
+		"zscore": {
+			"type": "float"
+		}
+	}
+}

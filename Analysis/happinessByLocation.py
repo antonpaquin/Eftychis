@@ -1,5 +1,5 @@
 from elasticsearch import Elasticsearch
-import matplotlib
+import statistics
 import code
 
 es = Elasticsearch()
@@ -18,7 +18,7 @@ def getAvgPositivity(location):
                 "bool": {
                     "filter" : {
                         "geo_bounding_box" : {
-                            "pin.location" : {
+                            "location" : {
                                 "top_left" : {
                                     "lat" : location[0] + 0.1,
                                     "lon" : location[1] - 0.1
@@ -41,6 +41,39 @@ def getAvgPositivity(location):
         size=0
     )
 
-    return j
+    return j['aggregations']['avg_happy']['value']
+
+
+def getPositivities():
+    return [getAvgPositivity(g) for g in geocodes]
+
+
+def transformPositivities(avgs):
+    mMean = statistics.mean(avgs)
+    mStdev = statistics.stdev(avgs)
+    zscores = [(a - mMean) / mStdev for a in avgs]
+    return zscores
+
+
+def putValues(scores, ranks):
+    data = []
+    for geo, score, rank in zip(geocodes, scores, ranks):
+        es.index(
+            index='vizdata',
+            doc_type='map_happiness',
+            body={
+                'location': str(geo[0]) + ',' + str(geo[1]),
+                'zscore': score,
+                'rank': rank
+            }
+        )
+
+def run():
+    positivity = getPositivities()
+    posranks = [(p, x) for p, x in zip(positivity, range(len(positivity)))]
+    posranks = [a[1] for a in sorted(posranks)]
+    z = transformPositivities(positivity)
+    putValues(z, posranks)
+
 
 code.interact(local=locals())

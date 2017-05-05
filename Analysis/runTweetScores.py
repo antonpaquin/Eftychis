@@ -38,7 +38,6 @@ def getFirstIdBatch():
                         "range": {
                             "time": {
                                 "gte": str(int(t0)),
-                                "lt": str(int(t1)),
                                 "format": "epoch_millis"
                                 }
                             }
@@ -79,7 +78,7 @@ def scoreAndUpdateTweet(tweet):
                 'happyScore': score
             }
         },
-        retry_on_conflict=1
+        retry_on_conflict=5
     )
 
 def getStartTime():
