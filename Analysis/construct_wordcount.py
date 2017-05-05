@@ -26,7 +26,7 @@ def loadMatrix():
     # if the pickled matrix file exists, load it
     if os.path.isfile(countMatrixFile):
         with open(countMatrixFile, 'rb') as matrix_f:
-            countMatrix = pickle.read(matrix_f)
+            countMatrix = pickle.load(matrix_f)
     # else, initialize with -1's
     else:
         countMatrix = []
@@ -46,7 +46,7 @@ def loadMatrix():
                 countMatrix[i].append(-1)
         for i in range(extendSize):
             r = []
-            for j in range(extendSize + len(countMatrix)):
+            for j in range(len(countMatrix)):
                 r.append(-1)
             countMatrix.append(r)
 
