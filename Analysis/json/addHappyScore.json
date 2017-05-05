@@ -1,0 +1,9 @@
+{
+	"tweet": {
+		"properties": {
+			"happyScore": {
+				"type": "float"
+			}
+		}
+	}
+}

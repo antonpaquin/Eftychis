@@ -33,13 +33,15 @@ def getFirstIdBatch():
                 "bool": {
                     "must_not": {
                         "exists" : { "field" : "happyScore" }
-                        }
-                    },
-                "range": {
-                    "time": {
-                        "gte": t0,
-                        "lte": t1,
-                        "format": "epoch_millis"
+                        },
+                    "must": {  
+                        "range": {
+                            "time": {
+                                "gte": str(int(t0)),
+                                "lt": str(int(t1)),
+                                "format": "epoch_millis"
+                                }
+                            }
                         }
                     }
                 }
@@ -77,7 +79,7 @@ def scoreAndUpdateTweet(tweet):
                 'happyScore': score
             }
         },
-        retry_on_conflict=10
+        retry_on_conflict=1
     )
 
 def getStartTime():
@@ -85,10 +87,10 @@ def getStartTime():
         indx = int(time_f.readline().strip())
 
     with open('params/multithread_time.txt', 'w') as time_f:
-        time_f.write(indx + 1)
+        time_f.write(str(indx + 1))
         time_f.write('\n')
 
-    startTime = unix_time_millis(datetime.datetime(2017, 04, 24, 0, 0))
+    startTime = unix_time_millis(datetime.datetime(2017, 4, 24, 0, 0))
     interval = 12 * 60 * 60 * 1000
     startTime += indx * interval
     return startTime, startTime + interval
