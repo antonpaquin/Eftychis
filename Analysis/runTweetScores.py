@@ -1,5 +1,6 @@
 from elasticsearch import Elasticsearch
 from tweetscore import tweetScore
+import datetime
 import json
 import code
 
@@ -12,7 +13,7 @@ last_scroll_id = ''
 
 def getIdBatch():
     global last_scroll_id
-    
+
     j = es.scroll(
         scroll=scrollContext,
         scroll_id=last_scroll_id
@@ -23,7 +24,7 @@ def getIdBatch():
 
 def getFirstIdBatch():
     global last_scroll_id
-    
+    t0, t1 = getStartTime()
     j = es.search(
         index='twdata',
         doc_type='tweet',
@@ -36,8 +37,8 @@ def getFirstIdBatch():
                     },
                 "range": {
                     "time": {
-                        "gte": 1488344400000,
-                        "lte": 1493697600000,
+                        "gte": t0,
+                        "lte": t1,
                         "format": "epoch_millis"
                         }
                     }
@@ -78,6 +79,23 @@ def scoreAndUpdateTweet(tweet):
         },
         retry_on_conflict=10
     )
+
+def getStartTime():
+    with open('params/multithread_time.txt', 'r') as time_f:
+        indx = int(time_f.readline().strip())
+
+    with open('params/multithread_time.txt', 'w') as time_f:
+        time_f.write(indx + 1)
+        time_f.write('\n')
+
+    startTime = unix_time_millis(datetime.datetime(2017, 04, 24, 0, 0))
+    interval = 12 * 60 * 60 * 1000
+    startTime += indx * interval
+    return startTime, startTime + interval
+
+epoch = datetime.datetime.utcfromtimestamp(0)
+def unix_time_millis(dt):
+    return (dt - epoch).total_seconds() * 1000.0
 
 def step():
     if last_scroll_id == '':
