@@ -1,0 +1,54 @@
+Hi! Our project is called "Eftychis". Our goal was to make a map of the
+happiness of the United States, based on twitter data. We grabbed a whole lot of
+tweets and ran lots of analysis, and as you can see, we've kinda got a picture
+of where twitter users are most happy.
+
+We started by gathering tweets from the twitter API, using their geotagging
+service to filter tweets into 65-km radius buckets. You can see that our map is
+very grid-like -- that's actually a result of this scraping process, though the
+original circles were a bit higher resolution. We ran our scraper every hour,
+grabbing up to 100 tweets from each of 1053 buckets, and we eventually ended
+up with 23 million tweets.
+
+For storing our data, we used Elasticsearch, which ended up making the project
+a lot easier. We configured ES to tokenize and stem the tweets as they came in,
+so at time for analysis things would go more smoothly.
+
+In order to assign happiness scores to tweets, we used a sentiment analysis
+technique called "Label Propagation". To do this, found the 2000 most common
+words, then created a probability matrix from their co-occurrence matrix. We
+hand-picked about 10 words to be our positive and negative clamp words, and
+then iteratively propagated their values to the other words until convergence.
+
+This gave us a list of words with p(Positive) and p(Negative) for each word.
+Instead of calculating probabilities, we took the mean and standard deviation of
+this list and calculated each word's Z-score to be its final word score.
+
+Then, each tweet received a tweet score based on the mean score of the words in
+both the tweet and our ranking. From there, we could move onto larger aggregates
+and more interesting results.
+
+First, we could approximate word scores of words outside of our top 2000, by
+taking the mean score of tweets containing that word. If you have a word you'd
+like to check our data for, go ahead -- the search is ready. We've picked out
+a few that seemed interesting.
+
+Next, of course, we've got the graph of happiness across the US. The most
+visually appealing way of looking at this is how we've shown it, with the
+dots shown colored by their rank out of the 1053 total. In our map, red
+indicates more positivity, and yellow indicates more negativity.
+
+You can see the southeast is a bit negative -- we noticed that too, so we ran a
+linear regression on happiness rank vs distance from Florida. We found that
+there is a weak positive correlation -- about 1 rank every 25km, p<0.0005 and
+r^2 = 0.115
+
+We also looked at tweets stratified by the hour of the day, and we found a
+surprisingly large drop in positivity at night between midnight and 11:00AM.
+We're guessing that people who are very negative are more likely to be on late
+at night. Peak positivity was in the late afternoon.
+
+It's not always intuitive how people interact with the internet, but given the
+availability and scope of the data, machines have an easy time telling us what
+we want to know. We had a lot of questions about positivity and twitter, and
+through these data analysis techniques we were able to answer most of them.
