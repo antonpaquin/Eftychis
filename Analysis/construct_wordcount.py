@@ -18,7 +18,7 @@ def get_query(word1, word2):
     termFilter = [{ 'term': { 'content': word1 } }]
     if word1 != word2:
         termFilter.append( { 'term': { 'content': word2 } } )
-    return {'query': {'bool': {'filter': termFilter } } }
+    return {'query': {'bool': {'filter': termFitler } } }
 
 def loadMatrix():
     global countMatrix, wordlist
@@ -26,7 +26,7 @@ def loadMatrix():
     # if the pickled matrix file exists, load it
     if os.path.isfile(countMatrixFile):
         with open(countMatrixFile, 'rb') as matrix_f:
-            countMatrix = pickle.load(matrix_f)
+            countMatrix = pickle.read(matrix_f)
     # else, initialize with -1's
     else:
         countMatrix = []
@@ -89,6 +89,6 @@ def queryEdge(word1, word2):
         index='twdata',
         doc_type='tweet',
         body=get_query(word1, word2)
-    )['count']
+    )
 
 code.interact(local=locals())
